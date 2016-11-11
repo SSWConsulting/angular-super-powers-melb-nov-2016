@@ -1,0 +1,25 @@
+<!--{{companies$ | async | json}}-->
+<h1>
+  Companies
+  <button class="btn btn-success pull-right" routerLink="/company/detail/new">Add</button>
+</h1>
+<table class="table table-striped">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th></th>
+  </tr>
+  <tbody>
+    <tr *ngFor="let company of companies$ | async">
+      <td>{{company.name}}</td>
+      <td>{{company.email}}</td>
+      <td>{{company.phone}}</td>
+      <td>
+        <button class="btn btn-default" routerLink="/company/detail/{{company.id}}">Detail</button>
+        <button class="btn btn-default" routerLink="/company/edit/{{company.id}}">Edit</button>
+        <button class="btn btn-default" (click)="deleteCompany(company.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
