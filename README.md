@@ -1,3 +1,11 @@
+# Warning: Code not maintained.
+
+This code was written during a one day [FireBootCamp](http://firebootcamp.com) course and is available to help students who attended on the day.
+
+It will not be updated or maintained.
+
+To attend Angular training check out [FireBootCamp](http://firebootcamp.com)
+
 # FbcCrm
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.19-3.
